@@ -1,3 +1,4 @@
+import SortingAlgorithms as s
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -31,3 +32,13 @@ def merge(left, right):
 
     return res
 
+def hybrid_merge_sort(arr, threshold):
+    if len(arr) <= threshold:
+        return s.selection_sort(arr)#apply selection sort on len(arr)<=threshold
+
+    mid = len(arr) // 2
+
+    left = hybrid_merge_sort(arr[:mid], threshold)
+    right = hybrid_merge_sort(arr[mid:], threshold)
+
+    return merge(left, right)
