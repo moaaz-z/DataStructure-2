@@ -32,10 +32,33 @@ def selection_sort(arr):
         arr[i],arr[min]=arr[min],arr[i] ##Swap
     return arr
 
+def quick_sort(arr, low=0, high=None):
+    if high is None:
+        high = len(arr) - 1
+
+    if low < high:
+        # Partition the array and get the final pivot index
+        p_index = partition(arr, low, high)
+
+        # Recursively sort elements before and after the pivot
+        quick_sort(arr, low, p_index - 1)
+        quick_sort(arr, p_index + 1, high)
+
+    return arr
 
 
+def partition(arr, low, high):
+    pivot = arr[high]  # Pivot at the end
+    i = low - 1  # Boundary for elements <= pivot
 
+    for j in range(low, high):
+        if arr[j] <= pivot:  
+            i += 1          
+            arr[i], arr[j] = arr[j], arr[i]  # move less than or equal to pivot to the left side
 
+    # Place the pivot in its correct sorted position
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    return i + 1
 
 
 def merge_sort(arr):
