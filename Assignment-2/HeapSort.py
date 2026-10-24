@@ -7,7 +7,15 @@ def MaxHeapify(arr,n,i):
     if(r<n and arr[r]>arr[max]):
         max=r
     if(max!=i):#max found or not 
-        temp=arr[i]
-        arr[i]=arr[max]
-        arr[max]=arr[temp]
+        arr[i], arr[max] = arr[max], arr[i]
         MaxHeapify(arr,n,max)#max is the index where the swapped element moved.
+def BuildHeap(arr):
+    n = len(arr)
+    for i in range(n // 2 - 1, -1, -1):#The last non-leaf node is at index n // 2 - 1
+        MaxHeapify(arr, n, i)
+def HeapSort(arr):
+    n=len(arr)
+    BuildHeap(arr)#Now the Max is in the Top
+    for i in range(n-1,-1,-1):
+        arr[0], arr[i] = arr[i], arr[0]
+        MaxHeapify(arr,i,0)
