@@ -1,32 +1,32 @@
-# 🧩 Data Structures & Algorithms in Python
+# Data Structures and Algorithms in Python
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![Alexandria University](https://img.shields.io/badge/Coursework-Data%20Structures-green)](https://eng.alexu.edu.eg/)
 
-Comprehensive implementations, empirical benchmarking, and problem sets covering fundamental **Data Structures and Algorithms (DSA)** in Python, completed as part of the Computer and Communication Engineering coursework at **Alexandria University**.
+Comprehensive implementations, empirical benchmarking, and problem sets covering fundamental Data Structures and Algorithms (DSA) in Python, completed as part of the Computer and Communication Engineering coursework at Alexandria University.
 
 ---
 
-## 📋 Repository Structure
+## Repository Structure
 
 ```text
 DataStructure-2/
 ├── Assignment-1/
-│   └── SortingAlgorithmsP1/
-│       ├── SortingAlgorithms.py       # Bubble Sort, Selection Sort, Insertion Sort
-│       └── TestImplementation.ipynb   # Empirical benchmarking & runtime analysis
+│ └── SortingAlgorithmsP1/
+│ ├── SortingAlgorithms.py # Bubble Sort, Selection Sort, Insertion Sort
+│ └── TestImplementation.ipynb # Empirical benchmarking & runtime analysis
 ├── Assignment-2/
-│   └── Sorting_algo_p2.py             # Divide-and-conquer sorting (Merge Sort)
-├── lab1.py                            # Binary Search implementation
-├── sheet1.py                          # Array problem set: second largest element
-├── sheet1.2.py                        # Recursive maximum finding algorithm
-└── README.md                          # Repository documentation
+│ └── Sorting_algo_p2.py # Divide-and-conquer sorting (Merge Sort)
+├── lab1.py # Binary Search implementation
+├── sheet1.py # Array problem set: second largest element
+├── sheet1.2.py # Recursive maximum finding algorithm
+└── README.md # Repository documentation
 ```
 
 ---
 
-## ⚡ Implemented Algorithms & Complexity
+## Implemented Algorithms and Complexity
 
 | Algorithm | Category | Best Time | Average Time | Worst Time | Space Complexity | Implementation File |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -39,7 +39,7 @@ DataStructure-2/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Run Python Scripts
 ```bash
